@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let username = '';
 
     // WebSocket connection
-    const socket = new WebSocket('ws://localhost:8080');
+    //   for local host -  const socket = new WebSocket('ws://localhost:8080');
+const socket = new WebSocket('ws:https://chatter-1.onrender.com/index.html:8080/');
+
 
     socket.addEventListener('open', () => {
         console.log('Connected to server');
